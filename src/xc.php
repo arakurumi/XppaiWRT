@@ -140,7 +140,7 @@ function myip(){
     $timezone = $data['timezone'];
     $as = $data['as'];
     $ip = $data['query'];
-    $result = "ISP : $isp\n↳ Address : $as \n↳ IP : $ip \n↳ Region | City : $region | $city \n↳ Timezone : $timezone \n↳ Country : $country | $countryCode \n↳ XppaiWRT";
+    $result = "ISP : $isp\nAddress : $as \nIP : $ip \nRegion | City : $region | $city \nTimezone : $timezone \nCountry : $country | $countryCode \nXppaiWRT";
     return $result;
 }
 
