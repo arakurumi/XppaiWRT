@@ -26,24 +26,24 @@ $bot->cmd('/cmdlist', function () {
     $options = ['parse_mode' => 'html','reply' => true];
     return Bot::sendMessage("
 📁Aria2 Command
- <code>/aria2add</code>      | Add task
- <code>/aria2stats</code>    | Aria2 status
- <code>/aria2pause</code>    | Pause all
- <code>/aria2resume</code>   | Resume all
+ <code>/aria2add</code> | Add task
+ <code>/aria2stats</code> | Aria2 status
+ <code>/aria2pause</code> | Pause all
+ <code>/aria2resume</code> | Resume all
 📁OpenClash Command
- <code>/oc</code>        | OC Information
- <code>/proxies</code>   | Proxies status 
- <code>/rules</code>     | Rule list 
+ <code>/oc</code> | OC Information
+ <code>/proxies</code> | Proxies status 
+ <code>/rules</code> | Rule list 
 📁MyXL Command 
- <code>/myxl</code>      | Bandwidth usage 
+ <code>/myxl</code> | Bandwidth usage 
  <code>/setxl 087</code> | Set default number
 📁System Information
- <code>/vnstat</code>    | Bandwidth usage 
- <code>/memory</code>    | Memory status 
- <code>/myip</code>      | Get ip details 
+ <code>/vnstat</code> | Bandwidth usage 
+ <code>/memory</code> | Memory status 
+ <code>/myip</code> | Get ip details 
  <code>/speedtest</code> | Speedtest 
- <code>/ping</code>      | Ping bot
- <code>/sysinfo</code>   | System Information",$options);
+ <code>/ping</code> | Ping bot
+ <code>/sysinfo</code> | System Information",$options);
 });
 
 // OpenWRT Command 
