@@ -24,26 +24,26 @@ $bot->cmd('/ping','yes');
 $bot->cmd('/start',"Welcome to RumiWRT\n/cmdlist to see all comand");
 $bot->cmd('/cmdlist', function () {
     $options = ['parse_mode' => 'html','reply' => true];
-    return Bot::sendMessage("<code>
+    return Bot::sendMessage("
 📁Aria2 Command
- ↳/aria2add      | Add task
- ↳/aria2stats    | Aria2 status
- ↳/aria2pause    | Pause all
- ↳/aria2resume   | Resume all
+ <code>/aria2add</code>      | Add task
+ <code>/aria2stats</code>    | Aria2 status
+ <code>/aria2pause</code>    | Pause all
+ <code>/aria2resume</code>   | Resume all
 📁OpenClash Command
- ↳/oc        | OC Information
- ↳/proxies   | Proxies status 
- ↳/rules     | Rule list 
+ <code>/oc</code>        | OC Information
+ <code>/proxies</code>   | Proxies status 
+ <code>/rules</code>     | Rule list 
 📁MyXL Command 
- ↳/myxl      | Bandwidth usage 
- ↳/setxl 087 | Set default number
+ <code>/myxl</code>      | Bandwidth usage 
+ <code>/setxl 087</code> | Set default number
 📁System Information
- ↳/vnstat    | Bandwidth usage 
- ↳/memory    | Memory status 
- ↳/myip      | Get ip details 
- ↳/speedtest | Speedtest 
- ↳/ping      | Ping bot
- ↳/sysinfo   | System Information</code>",$options);
+ <code>/vnstat</code>    | Bandwidth usage 
+ <code>/memory</code>    | Memory status 
+ <code>/myip</code>      | Get ip details 
+ <code>/speedtest</code> | Speedtest 
+ <code>/ping</code>      | Ping bot
+ <code>/sysinfo</code>   | System Information",$options);
 });
 
 // OpenWRT Command 
