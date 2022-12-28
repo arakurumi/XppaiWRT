@@ -24,7 +24,7 @@ $bot->cmd('/ping','yes');
 $bot->cmd('/start',"Welcome to RumiWRTBot\n/cmdlist to see all comand\n');
 $bot->cmd('/cmdlist', function () {
     $options = ['parse_mode' => 'html','reply' => true];
-    return Bot::sendMessage("<code>
+    return Bot::sendMessage("
 📁Aria2 Command
  ↳/aria2add      | Add task
  ↳/aria2stats    | Aria2 status
@@ -43,7 +43,7 @@ $bot->cmd('/cmdlist', function () {
  ↳/myip      | Get ip details 
  ↳/speedtest | Speedtest 
  ↳/ping      | Ping bot
- ↳/sysinfo   | System Information</code>",$options);
+ ↳/sysinfo   | System Information",$options);
 });
 
 // OpenWRT Command 
