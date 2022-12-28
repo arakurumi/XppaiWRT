@@ -21,10 +21,10 @@ $bot = new PHPTelebot(readToken("token"), readToken("username"));
 $bot->cmd('/ping','yes');
 
 // start cmd & cmd list
-$bot->cmd('/start',"Welcome to RumiWRTBot\n/cmdlist to see all comand\n');
+$bot->cmd('/start',"Welcome to RumiWRT\n/cmdlist to see all comand\nTelegram Support : @OppaiCyber");
 $bot->cmd('/cmdlist', function () {
     $options = ['parse_mode' => 'html','reply' => true];
-    return Bot::sendMessage("
+    return Bot::sendMessage("<code>
 📁Aria2 Command
  ↳/aria2add      | Add task
  ↳/aria2stats    | Aria2 status
@@ -43,7 +43,7 @@ $bot->cmd('/cmdlist', function () {
  ↳/myip      | Get ip details 
  ↳/speedtest | Speedtest 
  ↳/ping      | Ping bot
- ↳/sysinfo   | System Information",$options);
+ ↳/sysinfo   | System Information</code>",$options);
 });
 
 // OpenWRT Command 
